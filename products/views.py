@@ -1,5 +1,3 @@
-from operator import ge
-from unicodedata import category
 from rest_framework import generics
 from .models import Product, Category
 from .serializers import ProductSerializer, CategorySerializer
