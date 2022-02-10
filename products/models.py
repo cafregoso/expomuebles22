@@ -1,3 +1,5 @@
+from turtle import color
+from unicodedata import name
 from django.db import models
 
 # Create your models here.
@@ -19,6 +21,30 @@ class Certification(models.Model):
         return self.name
 
 
+class Webinar(models.Model):
+
+    name = models.CharField(
+        max_length = 100,
+        verbose_name = 'Nombre',
+    )
+    theme = models.CharField(
+        max_length = 200,
+        verbose_name = 'Tema',
+    )
+    date = models.CharField(
+        max_length = 200,
+        verbose_name = 'Fecha del evento'
+    )
+    image = models.ImageField(
+        blank = True,
+        null=True,
+        upload_to = 'webinars'
+    )
+
+    def __str__(self):
+        return self.name
+
+
 class Category(models.Model):
 
     name = models.CharField(
@@ -31,6 +57,24 @@ class Category(models.Model):
         blank = True,
         null=True,
         verbose_name='Image',
+    )
+
+    image2 = models.ImageField(
+        upload_to='categories',
+        blank = True,
+        null=True,
+        verbose_name='Image 2',
+    )
+
+    info = models.TextField(
+        verbose_name='Informacion de categoria',
+        null = True,
+    )
+
+    color = models.CharField(
+        max_length = 20,
+        verbose_name = ' Color',
+        null = True,
     )
 
     created = models.DateTimeField(

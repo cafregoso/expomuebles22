@@ -1,5 +1,6 @@
+from dataclasses import fields
 from rest_framework import serializers
-from .models import Certification, Category, Product
+from .models import Certification, Category, Product, Webinar
 
 class CertificationSerializer(serializers.ModelSerializer):
 
@@ -8,11 +9,18 @@ class CertificationSerializer(serializers.ModelSerializer):
         fields = ('id', 'name', 'image')
 
 
+class WebinarSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Webinar
+        fields = ('id', 'name', 'theme', 'date', 'image')
+
+
 class CategorySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Category
-        fields = ('id', 'name', 'image')
+        fields = ('id', 'name', 'info', 'image', 'image2', 'color')
 
 
 class ProductSerializer(serializers.ModelSerializer):
