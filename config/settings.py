@@ -14,7 +14,9 @@ SECRET_KEY = 'django-insecure-57d%z)i-&wtz3xvwx$wvq&et_)p!(#*1jddk8@rz#c50)_e+q2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '*',
+]
 
 
 # Application definition
@@ -57,6 +59,8 @@ MIDDLEWARE = [
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
     'http://localhost:8000',
+    'http://expo.gruporequiez.com',
+    'https://expo.gruporequiez.com',
 )
 
 ROOT_URLCONF = 'config.urls'
@@ -87,7 +91,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'requiez_expo_22',
-        'USER': 'carlosdb',
+        'USER': 'cafregoso',
         'PASSWORD': 'password',
         'HOST': 'localhost',
         'PORT': '',
