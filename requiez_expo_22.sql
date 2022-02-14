@@ -2,10 +2,10 @@
 -- version 5.1.2
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Feb 13, 2022 at 08:20 PM
--- Server version: 8.0.28
--- PHP Version: 7.3.29
+-- Servidor: localhost
+-- Tiempo de generación: 14-02-2022 a las 04:46:12
+-- Versión del servidor: 8.0.28
+-- Versión de PHP: 7.3.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `requiez_expo_22`
+-- Base de datos: `requiez_expo_22`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `auth_group`
+-- Estructura de tabla para la tabla `auth_group`
 --
 
 CREATE TABLE `auth_group` (
@@ -35,7 +35,7 @@ CREATE TABLE `auth_group` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `auth_group_permissions`
+-- Estructura de tabla para la tabla `auth_group_permissions`
 --
 
 CREATE TABLE `auth_group_permissions` (
@@ -47,7 +47,7 @@ CREATE TABLE `auth_group_permissions` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `auth_permission`
+-- Estructura de tabla para la tabla `auth_permission`
 --
 
 CREATE TABLE `auth_permission` (
@@ -58,7 +58,7 @@ CREATE TABLE `auth_permission` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `auth_permission`
+-- Volcado de datos para la tabla `auth_permission`
 --
 
 INSERT INTO `auth_permission` (`id`, `name`, `content_type_id`, `codename`) VALUES
@@ -114,7 +114,7 @@ INSERT INTO `auth_permission` (`id`, `name`, `content_type_id`, `codename`) VALU
 -- --------------------------------------------------------
 
 --
--- Table structure for table `auth_user`
+-- Estructura de tabla para la tabla `auth_user`
 --
 
 CREATE TABLE `auth_user` (
@@ -132,7 +132,7 @@ CREATE TABLE `auth_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `auth_user`
+-- Volcado de datos para la tabla `auth_user`
 --
 
 INSERT INTO `auth_user` (`id`, `password`, `last_login`, `is_superuser`, `username`, `first_name`, `last_name`, `email`, `is_staff`, `is_active`, `date_joined`) VALUES
@@ -141,7 +141,7 @@ INSERT INTO `auth_user` (`id`, `password`, `last_login`, `is_superuser`, `userna
 -- --------------------------------------------------------
 
 --
--- Table structure for table `auth_user_groups`
+-- Estructura de tabla para la tabla `auth_user_groups`
 --
 
 CREATE TABLE `auth_user_groups` (
@@ -153,7 +153,7 @@ CREATE TABLE `auth_user_groups` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `auth_user_user_permissions`
+-- Estructura de tabla para la tabla `auth_user_user_permissions`
 --
 
 CREATE TABLE `auth_user_user_permissions` (
@@ -165,7 +165,7 @@ CREATE TABLE `auth_user_user_permissions` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `django_admin_log`
+-- Estructura de tabla para la tabla `django_admin_log`
 --
 
 CREATE TABLE `django_admin_log` (
@@ -180,7 +180,7 @@ CREATE TABLE `django_admin_log` (
 ) ;
 
 --
--- Dumping data for table `django_admin_log`
+-- Volcado de datos para la tabla `django_admin_log`
 --
 
 INSERT INTO `django_admin_log` (`id`, `action_time`, `object_id`, `object_repr`, `action_flag`, `change_message`, `content_type_id`, `user_id`) VALUES
@@ -377,7 +377,7 @@ INSERT INTO `django_admin_log` (`id`, `action_time`, `object_id`, `object_repr`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `django_content_type`
+-- Estructura de tabla para la tabla `django_content_type`
 --
 
 CREATE TABLE `django_content_type` (
@@ -387,7 +387,7 @@ CREATE TABLE `django_content_type` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `django_content_type`
+-- Volcado de datos para la tabla `django_content_type`
 --
 
 INSERT INTO `django_content_type` (`id`, `app_label`, `model`) VALUES
@@ -407,7 +407,7 @@ INSERT INTO `django_content_type` (`id`, `app_label`, `model`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `django_migrations`
+-- Estructura de tabla para la tabla `django_migrations`
 --
 
 CREATE TABLE `django_migrations` (
@@ -418,7 +418,7 @@ CREATE TABLE `django_migrations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `django_migrations`
+-- Volcado de datos para la tabla `django_migrations`
 --
 
 INSERT INTO `django_migrations` (`id`, `app`, `name`, `applied`) VALUES
@@ -453,7 +453,7 @@ INSERT INTO `django_migrations` (`id`, `app`, `name`, `applied`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `django_session`
+-- Estructura de tabla para la tabla `django_session`
 --
 
 CREATE TABLE `django_session` (
@@ -463,7 +463,7 @@ CREATE TABLE `django_session` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `django_session`
+-- Volcado de datos para la tabla `django_session`
 --
 
 INSERT INTO `django_session` (`session_key`, `session_data`, `expire_date`) VALUES
@@ -474,7 +474,7 @@ INSERT INTO `django_session` (`session_key`, `session_data`, `expire_date`) VALU
 -- --------------------------------------------------------
 
 --
--- Table structure for table `products_category`
+-- Estructura de tabla para la tabla `products_category`
 --
 
 CREATE TABLE `products_category` (
@@ -489,7 +489,7 @@ CREATE TABLE `products_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `products_category`
+-- Volcado de datos para la tabla `products_category`
 --
 
 INSERT INTO `products_category` (`id`, `name`, `image`, `created`, `updated`, `info`, `color`, `image2`) VALUES
@@ -501,7 +501,7 @@ INSERT INTO `products_category` (`id`, `name`, `image`, `created`, `updated`, `i
 -- --------------------------------------------------------
 
 --
--- Table structure for table `products_certification`
+-- Estructura de tabla para la tabla `products_certification`
 --
 
 CREATE TABLE `products_certification` (
@@ -511,7 +511,7 @@ CREATE TABLE `products_certification` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `products_certification`
+-- Volcado de datos para la tabla `products_certification`
 --
 
 INSERT INTO `products_certification` (`id`, `name`, `image`) VALUES
@@ -523,7 +523,7 @@ INSERT INTO `products_certification` (`id`, `name`, `image`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `products_product`
+-- Estructura de tabla para la tabla `products_product`
 --
 
 CREATE TABLE `products_product` (
@@ -542,7 +542,7 @@ CREATE TABLE `products_product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `products_product`
+-- Volcado de datos para la tabla `products_product`
 --
 
 INSERT INTO `products_product` (`id`, `name`, `url`, `brand`, `description`, `materials`, `colors`, `image`, `image1`, `image2`, `created`, `updated`) VALUES
@@ -589,7 +589,7 @@ INSERT INTO `products_product` (`id`, `name`, `url`, `brand`, `description`, `ma
 -- --------------------------------------------------------
 
 --
--- Table structure for table `products_product_category`
+-- Estructura de tabla para la tabla `products_product_category`
 --
 
 CREATE TABLE `products_product_category` (
@@ -599,7 +599,7 @@ CREATE TABLE `products_product_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `products_product_category`
+-- Volcado de datos para la tabla `products_product_category`
 --
 
 INSERT INTO `products_product_category` (`id`, `product_id`, `category_id`) VALUES
@@ -648,7 +648,7 @@ INSERT INTO `products_product_category` (`id`, `product_id`, `category_id`) VALU
 -- --------------------------------------------------------
 
 --
--- Table structure for table `products_product_certifications`
+-- Estructura de tabla para la tabla `products_product_certifications`
 --
 
 CREATE TABLE `products_product_certifications` (
@@ -658,7 +658,7 @@ CREATE TABLE `products_product_certifications` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `products_product_certifications`
+-- Volcado de datos para la tabla `products_product_certifications`
 --
 
 INSERT INTO `products_product_certifications` (`id`, `product_id`, `certification_id`) VALUES
@@ -690,7 +690,7 @@ INSERT INTO `products_product_certifications` (`id`, `product_id`, `certificatio
 -- --------------------------------------------------------
 
 --
--- Table structure for table `products_webinar`
+-- Estructura de tabla para la tabla `products_webinar`
 --
 
 CREATE TABLE `products_webinar` (
@@ -702,7 +702,7 @@ CREATE TABLE `products_webinar` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `products_webinar`
+-- Volcado de datos para la tabla `products_webinar`
 --
 
 INSERT INTO `products_webinar` (`id`, `name`, `theme`, `date`, `image`) VALUES
@@ -715,18 +715,18 @@ INSERT INTO `products_webinar` (`id`, `name`, `theme`, `date`, `image`) VALUES
 (7, 'PATRICIA BARROSO', 'Sustentabilidad: tu nueva norma en la oficina', '19 FEBRERO - 11:00 AM', 'webinars/Patricia_Barroso.webp');
 
 --
--- Indexes for dumped tables
+-- Índices para tablas volcadas
 --
 
 --
--- Indexes for table `auth_group`
+-- Indices de la tabla `auth_group`
 --
 ALTER TABLE `auth_group`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `name` (`name`);
 
 --
--- Indexes for table `auth_group_permissions`
+-- Indices de la tabla `auth_group_permissions`
 --
 ALTER TABLE `auth_group_permissions`
   ADD PRIMARY KEY (`id`),
@@ -734,21 +734,21 @@ ALTER TABLE `auth_group_permissions`
   ADD KEY `auth_group_permissio_permission_id_84c5c92e_fk_auth_perm` (`permission_id`);
 
 --
--- Indexes for table `auth_permission`
+-- Indices de la tabla `auth_permission`
 --
 ALTER TABLE `auth_permission`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `auth_permission_content_type_id_codename_01ab375a_uniq` (`content_type_id`,`codename`);
 
 --
--- Indexes for table `auth_user`
+-- Indices de la tabla `auth_user`
 --
 ALTER TABLE `auth_user`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `username` (`username`);
 
 --
--- Indexes for table `auth_user_groups`
+-- Indices de la tabla `auth_user_groups`
 --
 ALTER TABLE `auth_user_groups`
   ADD PRIMARY KEY (`id`),
@@ -756,7 +756,7 @@ ALTER TABLE `auth_user_groups`
   ADD KEY `auth_user_groups_group_id_97559544_fk_auth_group_id` (`group_id`);
 
 --
--- Indexes for table `auth_user_user_permissions`
+-- Indices de la tabla `auth_user_user_permissions`
 --
 ALTER TABLE `auth_user_user_permissions`
   ADD PRIMARY KEY (`id`),
@@ -764,7 +764,7 @@ ALTER TABLE `auth_user_user_permissions`
   ADD KEY `auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm` (`permission_id`);
 
 --
--- Indexes for table `django_admin_log`
+-- Indices de la tabla `django_admin_log`
 --
 ALTER TABLE `django_admin_log`
   ADD PRIMARY KEY (`id`),
@@ -772,45 +772,45 @@ ALTER TABLE `django_admin_log`
   ADD KEY `django_admin_log_user_id_c564eba6_fk_auth_user_id` (`user_id`);
 
 --
--- Indexes for table `django_content_type`
+-- Indices de la tabla `django_content_type`
 --
 ALTER TABLE `django_content_type`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `django_content_type_app_label_model_76bd3d3b_uniq` (`app_label`,`model`);
 
 --
--- Indexes for table `django_migrations`
+-- Indices de la tabla `django_migrations`
 --
 ALTER TABLE `django_migrations`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `django_session`
+-- Indices de la tabla `django_session`
 --
 ALTER TABLE `django_session`
   ADD PRIMARY KEY (`session_key`),
   ADD KEY `django_session_expire_date_a5c62663` (`expire_date`);
 
 --
--- Indexes for table `products_category`
+-- Indices de la tabla `products_category`
 --
 ALTER TABLE `products_category`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `products_certification`
+-- Indices de la tabla `products_certification`
 --
 ALTER TABLE `products_certification`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `products_product`
+-- Indices de la tabla `products_product`
 --
 ALTER TABLE `products_product`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `products_product_category`
+-- Indices de la tabla `products_product_category`
 --
 ALTER TABLE `products_product_category`
   ADD PRIMARY KEY (`id`),
@@ -818,7 +818,7 @@ ALTER TABLE `products_product_category`
   ADD KEY `products_product_cat_category_id_6bd7b606_fk_products_` (`category_id`);
 
 --
--- Indexes for table `products_product_certifications`
+-- Indices de la tabla `products_product_certifications`
 --
 ALTER TABLE `products_product_certifications`
   ADD PRIMARY KEY (`id`),
@@ -826,152 +826,152 @@ ALTER TABLE `products_product_certifications`
   ADD KEY `products_product_cer_certification_id_b260e165_fk_products_` (`certification_id`);
 
 --
--- Indexes for table `products_webinar`
+-- Indices de la tabla `products_webinar`
 --
 ALTER TABLE `products_webinar`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT for table `auth_group`
+-- AUTO_INCREMENT de la tabla `auth_group`
 --
 ALTER TABLE `auth_group`
   MODIFY `id` int NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `auth_group_permissions`
+-- AUTO_INCREMENT de la tabla `auth_group_permissions`
 --
 ALTER TABLE `auth_group_permissions`
   MODIFY `id` bigint NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `auth_permission`
+-- AUTO_INCREMENT de la tabla `auth_permission`
 --
 ALTER TABLE `auth_permission`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
--- AUTO_INCREMENT for table `auth_user`
+-- AUTO_INCREMENT de la tabla `auth_user`
 --
 ALTER TABLE `auth_user`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `auth_user_groups`
+-- AUTO_INCREMENT de la tabla `auth_user_groups`
 --
 ALTER TABLE `auth_user_groups`
   MODIFY `id` bigint NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `auth_user_user_permissions`
+-- AUTO_INCREMENT de la tabla `auth_user_user_permissions`
 --
 ALTER TABLE `auth_user_user_permissions`
   MODIFY `id` bigint NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `django_admin_log`
+-- AUTO_INCREMENT de la tabla `django_admin_log`
 --
 ALTER TABLE `django_admin_log`
   MODIFY `id` int NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `django_content_type`
+-- AUTO_INCREMENT de la tabla `django_content_type`
 --
 ALTER TABLE `django_content_type`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT for table `django_migrations`
+-- AUTO_INCREMENT de la tabla `django_migrations`
 --
 ALTER TABLE `django_migrations`
   MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
--- AUTO_INCREMENT for table `products_category`
+-- AUTO_INCREMENT de la tabla `products_category`
 --
 ALTER TABLE `products_category`
   MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `products_certification`
+-- AUTO_INCREMENT de la tabla `products_certification`
 --
 ALTER TABLE `products_certification`
   MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `products_product`
+-- AUTO_INCREMENT de la tabla `products_product`
 --
 ALTER TABLE `products_product`
   MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
--- AUTO_INCREMENT for table `products_product_category`
+-- AUTO_INCREMENT de la tabla `products_product_category`
 --
 ALTER TABLE `products_product_category`
   MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
--- AUTO_INCREMENT for table `products_product_certifications`
+-- AUTO_INCREMENT de la tabla `products_product_certifications`
 --
 ALTER TABLE `products_product_certifications`
   MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
--- AUTO_INCREMENT for table `products_webinar`
+-- AUTO_INCREMENT de la tabla `products_webinar`
 --
 ALTER TABLE `products_webinar`
   MODIFY `id` bigint NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- Constraints for dumped tables
+-- Restricciones para tablas volcadas
 --
 
 --
--- Constraints for table `auth_group_permissions`
+-- Filtros para la tabla `auth_group_permissions`
 --
 ALTER TABLE `auth_group_permissions`
   ADD CONSTRAINT `auth_group_permissio_permission_id_84c5c92e_fk_auth_perm` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`),
   ADD CONSTRAINT `auth_group_permissions_group_id_b120cbf9_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`);
 
 --
--- Constraints for table `auth_permission`
+-- Filtros para la tabla `auth_permission`
 --
 ALTER TABLE `auth_permission`
   ADD CONSTRAINT `auth_permission_content_type_id_2f476e4b_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`);
 
 --
--- Constraints for table `auth_user_groups`
+-- Filtros para la tabla `auth_user_groups`
 --
 ALTER TABLE `auth_user_groups`
   ADD CONSTRAINT `auth_user_groups_group_id_97559544_fk_auth_group_id` FOREIGN KEY (`group_id`) REFERENCES `auth_group` (`id`),
   ADD CONSTRAINT `auth_user_groups_user_id_6a12ed8b_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`);
 
 --
--- Constraints for table `auth_user_user_permissions`
+-- Filtros para la tabla `auth_user_user_permissions`
 --
 ALTER TABLE `auth_user_user_permissions`
   ADD CONSTRAINT `auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm` FOREIGN KEY (`permission_id`) REFERENCES `auth_permission` (`id`),
   ADD CONSTRAINT `auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`);
 
 --
--- Constraints for table `django_admin_log`
+-- Filtros para la tabla `django_admin_log`
 --
 ALTER TABLE `django_admin_log`
   ADD CONSTRAINT `django_admin_log_content_type_id_c4bce8eb_fk_django_co` FOREIGN KEY (`content_type_id`) REFERENCES `django_content_type` (`id`),
   ADD CONSTRAINT `django_admin_log_user_id_c564eba6_fk_auth_user_id` FOREIGN KEY (`user_id`) REFERENCES `auth_user` (`id`);
 
 --
--- Constraints for table `products_product_category`
+-- Filtros para la tabla `products_product_category`
 --
 ALTER TABLE `products_product_category`
   ADD CONSTRAINT `products_product_cat_category_id_6bd7b606_fk_products_` FOREIGN KEY (`category_id`) REFERENCES `products_category` (`id`),
   ADD CONSTRAINT `products_product_cat_product_id_08fb2842_fk_products_` FOREIGN KEY (`product_id`) REFERENCES `products_product` (`id`);
 
 --
--- Constraints for table `products_product_certifications`
+-- Filtros para la tabla `products_product_certifications`
 --
 ALTER TABLE `products_product_certifications`
   ADD CONSTRAINT `products_product_cer_certification_id_b260e165_fk_products_` FOREIGN KEY (`certification_id`) REFERENCES `products_certification` (`id`),
