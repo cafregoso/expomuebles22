@@ -16,6 +16,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '*',
+    '177.231.255.18',
 ]
 
 
