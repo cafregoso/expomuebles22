@@ -12,11 +12,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-57d%z)i-&wtz3xvwx$wvq&et_)p!(#*1jddk8@rz#c50)_e+q2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False 
 
 ALLOWED_HOSTS = [
     '*',
-    '177.231.255.18',
 ]
 
 
@@ -57,12 +56,17 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ORIGIN_WHITELIST = (
+CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
-    'http://localhost:8000',
-    'http://expo.gruporequiez.com',
+    'http://66.7.222.50',
+    'http://66.7.222.51',
+    'http://66.7.222.52',
+    'http://66.7.222.53',
+    'https://gruporequiez.com',
     'https://expo.gruporequiez.com',
-)
+    'http://192.168.2.150',
+    'http://172.19.144.1',
+]
 
 ROOT_URLCONF = 'config.urls'
 
@@ -137,6 +141,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
