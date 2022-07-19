@@ -58,14 +58,12 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
-    'http://66.7.222.50',
-    'http://66.7.222.51',
-    'http://66.7.222.52',
-    'http://66.7.222.53',
-    'https://gruporequiez.com',
+    'http://gruporequiez.com',
+    'http://expo.gruporequiez.com',
     'https://expo.gruporequiez.com',
-    'http://192.168.2.150',
-    'http://172.19.144.1',
+    'https://www.expo.gruporequiez.com',
+    'https://www.cafregoso.com',
+    'https://cafregoso.com',
 ]
 
 ROOT_URLCONF = 'config.urls'
